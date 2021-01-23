@@ -1,8 +1,14 @@
+# Start Database
+run `npm run database`
+
+# Connect to Postgres Docker Container
+run `docker exec -it [postgres-container-name] -U postgres`
+
 # How to setup Postgres on Docker
+visit Docker hub.
 
-$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
-The default postgres user and database are created in the entrypoint with initdb.
-
-The postgres database is a default database meant for use by users, utilities and third party applications.
-
-[link](postgresql.org/docs)
+# Postgres Commands
+- show databases: \l
+- use database: \c
+- show tables: \dt
+- describe table: \d tablename
