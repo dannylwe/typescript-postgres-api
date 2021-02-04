@@ -14,6 +14,7 @@ RUN npm install
 
 # Bundle app source
 COPY . .
+RUN tsc
 
 EXPOSE 9000
 CMD [ "node", "dist/index.js"]
